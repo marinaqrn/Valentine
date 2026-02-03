@@ -3,7 +3,7 @@ const yesBtn = document.getElementById("yesBtn");
 const question = document.getElementById("question");
 
 // margine per non far uscire il bottone fuori dallo schermo
-const PADDING = 20;
+const PADDING = 0;
 
 noBtn.addEventListener("mouseover", () => {
     
@@ -23,4 +23,5 @@ yesBtn.addEventListener("click", () => {
     question.innerHTML = "Sapevo che avresti detto di sì! ❤️🎉";
     noBtn.style.display = "none";
 });
+
 
