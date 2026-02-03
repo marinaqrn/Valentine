@@ -43,6 +43,13 @@ button {
 #noBtn {
     background-color: #6c757d;
     color: white;
-    position: absolute;
+    
+    position: fixed;   /* <--- si muove rispetto alla finestra */
+    left: 50%;         /* posizione iniziale centrata circa */
+    top: 60%;
+    transform: translate(-50%, -50%);
+
+    /*position: absolute;*/
 }
+
 
