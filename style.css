@@ -46,10 +46,11 @@ button {
     
     position: fixed;   /* <--- si muove rispetto alla finestra */
     left: 50%;         /* posizione iniziale centrata circa */
-    top: 60%;
+    top: 50%;
     transform: translate(-50%, -50%);
 
     /*position: absolute;*/
 }
+
 
 
