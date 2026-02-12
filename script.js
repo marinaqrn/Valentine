@@ -12,8 +12,7 @@ noBtn.addEventListener("mouseenter", () => {
     yesBtn.style.transform = `scale(${scale})`;
 });
 
-f
-unction moveNo() {
+function moveNo() {
     // Se nel CSS avevi transform: translate(-50%, -50%), lo azzeriamo al primo movimento
     if (!firstMoveDone) {
         noBtn.style.transform = ""; 
@@ -45,6 +44,7 @@ yesBtn.addEventListener("click", () => {
     question.innerHTML = "Sapevo che avresti detto di sì! ❤️🎉";
     noBtn.style.display = "none";
 });
+
 
 
 
