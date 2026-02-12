@@ -35,10 +35,15 @@ button {
     transition: 0.3s;
 }
 
+
 #yesBtn {
     background-color: #ff4d6d;
     color: white;
+    /* transizione per l'effetto di crescita */
+    transition: transform 0.3s ease;
+    transform-origin: center center;
 }
+
 
 #noBtn {
     background-color: #6c757d;
@@ -51,6 +56,7 @@ button {
 
     /*position: absolute;*/
 }
+
 
 
 
