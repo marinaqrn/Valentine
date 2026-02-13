@@ -30,7 +30,7 @@ button {
     padding: 15px 30px;
     font-size: 1.2rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -42,6 +42,9 @@ button {
     /* transizione per l'effetto di crescita */
     transition: transform 0.3s ease;
     transform-origin: center center;
+    position: fixed;   
+    left: 30%;         /* posizione iniziale */
+    top: 50%;
 }
 
 
@@ -56,6 +59,7 @@ button {
 
     /*position: absolute;*/
 }
+
 
 
 
