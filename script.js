@@ -2,13 +2,19 @@
 const noBtn = document.getElementById("noBtn");
 const yesBtn = document.getElementById("yesBtn");
 const question = document.getElementById("question");
+const gifContainer = document.getElementById("gifContainer");
 
 let scale = 1; // dimensione iniziale del "Sì"
 let firstMoveDone = false; // per gestire l'eventuale reset del transform del NO
 
+// (Opzionale) Pre-carica la GIF per mostrarla senza ritardo
+const celebrationGifUrl = "gif/abbraccio-cuori.gif"; // <-- metti qui il tuo file (es: /assets/love.gif)
+const preloadedGif = new Image();
+preloadedGif.src = celebrationGifUrl;
+
 // Cresce il Sì quando passi sul NO
 noBtn.addEventListener("mouseenter", () => {
-    scale = Math.min(scale + 0.1, 3); // limita a 3x
+    scale = Math.min(scale + 0.1, 3.5); // limita a 3x
     yesBtn.style.transform = `scale(${scale})`;
 });
 
@@ -43,6 +49,22 @@ noBtn.addEventListener("touchstart", (e) => {
 yesBtn.addEventListener("click", () => {
     question.innerHTML = "Sapevo che avresti detto di sì! ❤️🎉";
     noBtn.style.display = "none";
+});
+
+
+// Nascondi il NO
+  noBtn.style.display = "none";
+
+  // Reset dimensione del Sì
+  scale = 1;
+  yesBtn.style.transform = "scale(1)";
+
+  // Mostra GIF (se vuoi, puoi usare preloadedGif già pronto)
+  gifContainer.innerHTML = ""; // pulisci eventuali GIF precedenti
+  const img = document.createElement("img");
+  img.src = celebrationGifUrl;
+  img.alt = "Abbracci e cuori";
+  gifContainer.appendChild(img);
 });
 
 
