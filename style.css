@@ -43,7 +43,7 @@ button {
     transition: transform 0.25s ease;
     transform-origin: center center;
     position: fixed;   
-    left: 20%;         /* posizione iniziale */
+    left: 35%;         /* posizione iniziale */
     top: 50%;
 }
 
@@ -71,6 +71,7 @@ button {
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
+
 
 
 
