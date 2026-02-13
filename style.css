@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100svh;
     background-color: #ffdde1;
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -11,8 +11,8 @@ body {
 .container {
     text-align: center;
     background: white;
-    padding: 50px;
-    border-radius: 40px;
+    padding: 44px 40px;
+    border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -30,7 +30,7 @@ button {
     padding: 15px 30px;
     font-size: 1.2rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 40px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -40,10 +40,10 @@ button {
     background-color: #ff4d6d;
     color: white;
     /* transizione per l'effetto di crescita */
-    transition: transform 0.3s ease;
+    transition: transform 0.25s ease;
     transform-origin: center center;
     position: fixed;   
-    left: 30%;         /* posizione iniziale */
+    left: 20%;         /* posizione iniziale */
     top: 50%;
 }
 
@@ -59,6 +59,19 @@ button {
 
     /*position: absolute;*/
 }
+
+#gifContainer {
+  margin-top: 18px;
+  min-height: 120px;    /* spazio riservato per evitare layout jump */
+}
+
+#gifContainer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
 
 
 
