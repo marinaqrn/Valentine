@@ -49,12 +49,6 @@ noBtn.addEventListener("touchstart", (e) => {
 yesBtn.addEventListener("click", () => {
     question.innerHTML = "Sapevo che avresti detto di sì! ❤️🎉";
     noBtn.style.display = "none";
-});
-
-
-// Nascondi il NO
-  noBtn.style.display = "none";
-
   // Reset dimensione del Sì
   scale = 1;
   yesBtn.style.transform = "scale(1)";
@@ -66,6 +60,7 @@ yesBtn.addEventListener("click", () => {
   img.alt = "Abbracci e cuori";
   gifContainer.appendChild(img);
 });
+
 
 
 
