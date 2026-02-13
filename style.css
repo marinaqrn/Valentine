@@ -42,9 +42,6 @@ button {
     /* transizione per l'effetto di crescita */
     transition: transform 0.3s ease;
     transform-origin: center center;
-    position: fixed;   
-    left: 45%;         /* posizione iniziale */
-    top: 51%;
 }
 
 
@@ -71,6 +68,7 @@ button {
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
+
 
 
 
